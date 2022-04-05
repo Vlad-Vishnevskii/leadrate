@@ -1,0 +1,22 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = false
+  - const headerMods = ""
+  - const hasFooter = false
+  - const footerMods = ""
+  - const currentUrl = "index.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    +intro()
+
+block template
+  template(id="item")
+    li.todo__item
+      +custom-toggle({
+        inputLabel: 'text',
+        labelDescription: 'text',
+      }).custom-toggle--checkbox

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>ProjectName</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol></svg></div>
+    <div class="wrapper">
+      <main>
+        <div class="intro">
+          <div class="container">
+            <div class="todo">
+              <div class="todo__bg-dark"></div>
+              <div class="todo__bg-light"></div>
+              <div class="todo__top">
+                <h1 class="todo__title">Todo list</h1>
+                <button class="btn" type="button">add</button>
+              </div>
+              <ul class="todo__list"></ul>
+            </div>
+            <div class="intro__copyright">© 2021. Vishnevskii Vladislav</div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <template id="item">
+      <li class="todo__item">
+        <div class="custom-toggle custom-toggle--checkbox">
+          <label>
+            <input type="checkbox"><span class="custom-toggle__icon"></span><span class="custom-toggle__label">text</span><span class="custom-toggle__description">text</span>
+          </label>
+        </div>
+      </li>
+    </template>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.btn {
+  display: inline-flex;
+  padding: 6px 11px;
+
+  color: $color-default-white;
+  text-transform: uppercase;
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  border-radius: 7px;
+  background: $color-salmon;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-chilean-fire;
+    }
+  }
+}
